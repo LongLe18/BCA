@@ -1,0 +1,46 @@
+.Login {
+    .main {
+        .form-header-login p {
+            text-align: center;
+        }
+        .form-header-login h2::before {
+            background: #ffb606 none repeat scroll 0 0;
+            top: 50px;
+            content: "";
+            height: 2px;
+            position: absolute;
+            width: 200px;
+            z-index: 1;
+        }
+        .form-login {
+            margin: auto;
+            width: 50%;
+        }
+        .login_redirect {
+            display: flex;
+            span.MuiCheckbox-colorPrimary.Mui-checked {
+                color: #1a73e8;
+            }
+        }
+        .grow {
+            flex-grow: 1;
+        }
+        .bnt_login {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .login_link {
+            color: #002147;
+            text-decoration: none;
+        }
+        .login_link:hover {
+            text-decoration: underline;
+        }
+    }
+    @media only screen and (max-width: 760px) {
+        .Login {
+            width: 90%;
+            margin: 40px auto;
+        }
+    }
+}

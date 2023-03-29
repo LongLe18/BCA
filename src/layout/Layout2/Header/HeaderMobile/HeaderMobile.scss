@@ -1,0 +1,49 @@
+@import 'assets/styles/variables';
+
+.HeaderMobile {
+    display: none;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .HeaderMobile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        .header-mobile {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .header-mobile-menu {
+                flex-grow: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                span {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .header-nav-mobile { 
+            background-color: #5079a7;
+            border-radius: 10px;
+            margin: 30px 0 25px;
+
+            .header-nav-body-mobile {
+                padding: 15px 30px;
+                list-style: none;
+                .header-nav-item-mobile {
+                    font-size: 14px;
+                    padding: 6px 0;
+
+                    a {
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}   

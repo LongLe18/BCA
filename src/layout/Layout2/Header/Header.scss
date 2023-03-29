@@ -1,0 +1,13 @@
+@import "assets/styles/variables";
+.Header {
+    position: absolute;
+    z-index: 1000;
+    width: 100vw;
+    top: 0;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .Header {
+        position: relative;
+    }
+}

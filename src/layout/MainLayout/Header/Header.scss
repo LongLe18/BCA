@@ -1,0 +1,42 @@
+@import "assets/styles/variables";
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  h5 {
+    margin-bottom: 0;
+    margin-left: 8px;
+    color: black;
+  }
+}
+
+.navbar {
+  line-height: 0 !important;
+  padding: 0;
+  width: 70%;
+}
+
+#button-menu {
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after {
+  border-bottom-width: 0;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-open::after {
+  border-bottom-width: 0;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .Header {
+    position: relative;
+  }
+  .logo {
+    width: 100%;
+  }
+  #button-menu {
+    display: block;
+  }
+}
