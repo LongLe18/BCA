@@ -1,1 +1,60 @@
 @import "assets/styles/variables";
+
+@import "assets/styles/variables";
+
+#footer .logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  h5 {
+    margin-bottom: 0;
+    color: black;
+    margin-top: 10px;
+  }
+  img {
+    width: 100px;
+  }
+}
+#info {
+    color: rgb(156, 154, 154);
+    margin-top: 50px;
+}
+
+.navbar {
+  line-height: 0 !important;
+  padding: 0;
+}
+
+#footer {
+    .ant-space-item {
+        a {
+            color: black
+        }
+        padding: 0 16px 0 16px;
+    }
+    // background-image: url('../../../assets/images/hoa.png');
+    // background-repeat: no-repeat;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after {
+  border-bottom-width: 0;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu:hover::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-active::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-item-open::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-submenu-open::after, :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light>.ant-menu.ant-menu-horizontal >.ant-menu-submenu-open::after {
+  border-bottom-width: 0;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+  .Header {
+    position: relative;
+  }
+  .logo {
+    width: 100%;
+  }
+  #button-menu {
+    display: block;
+  }
+}
+
