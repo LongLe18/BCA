@@ -112,7 +112,7 @@ const HeaderCustom = () => {
     {
       key: "home",
       label: (
-        <a className="nav-link scrollto active" href="/">
+        <a className="nav-link scrollto " href="/">
           Trang chủ
         </a>
       ),
