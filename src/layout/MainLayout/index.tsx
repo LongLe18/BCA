@@ -6,7 +6,9 @@ import {Layout, Space} from "antd";
 const {Content} = Layout;
 import "./index.scss";
 const contentStyle: React.CSSProperties = {
-  backgroundColor: "#FFFEFD",
+  backgroundColor: "#ffffff",
+  paddingTop: 72,
+  paddingBottom: 72,
 };
 
 const MainLayout = () => {
