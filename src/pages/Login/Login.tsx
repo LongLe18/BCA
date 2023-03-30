@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {Link, useNavigate} from "react-router-dom";
 
-import InputLabel from "components/common/InputFieldLabel/InputFieldLabel";
-
 import {Container} from "reactstrap";
 import {useDispatch, useSelector} from "react-redux";
 
