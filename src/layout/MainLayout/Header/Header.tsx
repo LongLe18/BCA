@@ -188,6 +188,7 @@ const HeaderCustom = () => {
                             backgroundColor: 'transparent',
                             borderBottom: 'none',
                             width: '100%',
+                            justifyContent: 'right',
                         }}
                         onClick={(e) => setCurrent(e.key)}
                         overflowedIndicator={<MenuOutlined />}

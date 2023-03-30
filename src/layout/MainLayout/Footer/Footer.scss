@@ -36,6 +36,16 @@
     }
     // background-image: url('../../../assets/images/hoa.png');
     // background-repeat: no-repeat;
+    #input-email {
+      width: 20%;
+      height: 55px;
+      margin-right: 10px;
+    }
+
+    #button-email {
+      background-color: #e03e1a; 
+      height: 55px
+    }
 }
 
 :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after {
@@ -55,6 +65,20 @@
   }
   #button-menu {
     display: block;
+  }
+  .container-input {
+    flex-direction: column;
+    justify-content: space-between;
+    #input-email {
+      width: 100% !important;
+      height: 55px;
+      margin-bottom: 5px;
+    }
+    #button-email {
+      background-color: #e03e1a; 
+      height: 55px;
+      width: 50%;
+    }
   }
 }
 
