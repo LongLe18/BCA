@@ -7,6 +7,8 @@ const {Content} = Layout;
 import "./index.scss";
 const contentStyle: React.CSSProperties = {
   backgroundColor: "#FFFEFD",
+  paddingTop: 72,
+  paddingBottom: 72,
 };
 
 const MainLayout = () => {

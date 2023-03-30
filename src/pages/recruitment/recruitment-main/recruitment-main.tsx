@@ -7,9 +7,8 @@ const RecruitmentMain = () => {
   useEffect(() => {}, []);
 
   return (
-    <div className="recruitment-page">
+    <div className="recruitment-page container">
       <div className="header">
-        123
         <Title>Hãy phát triển và xây dựng tương lai cùng chúng tôi</Title>
       </div>
     </div>
