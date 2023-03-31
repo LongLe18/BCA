@@ -13,11 +13,11 @@
     "exactOptionalPropertyTypes": false,
     "useUnknownInCatchVariables": false,
     "noImplicitAny": false,
-    "noImplicitOverride": true,
+    // "noImplicitOverride": false,
     "declaration": false,
     "moduleResolution": "node",
     "noImplicitReturns": false,
-    "strictNullChecks": true, /* Allow 'import x from y' when a module doesn't have a default export. */
+    "strictNullChecks": false, /* Allow 'import x from y' when a module doesn't have a default export. */
     "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
     "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
     "strict": false, /* Enable all strict type-checking options. */

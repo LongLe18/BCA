@@ -2,19 +2,15 @@ import React, {useState, useEffect} from "react";
 import {Link, useNavigate} from "react-router-dom";
 
 import {Container} from "reactstrap";
-import {useDispatch, useSelector} from "react-redux";
 
-import {setPosition} from "redux/positionSlice";
 import "./Login.scss";
 
 const Login = props => {
   let navigate = useNavigate();
-  const dispatch = useDispatch();
+
   //   const position = useSelector(state => state?.position);
 
-  useEffect(() => {
-    dispatch(setPosition("ĐĂNG NHẬP"));
-  }, []);
+  useEffect(() => {}, []);
   const [error, setError] = useState();
   const [checked, setChecked] = useState(
     localStorage.getItem("username") ? true : false
