@@ -1,42 +1,41 @@
 @import "variables";
-@import "pattern";
 @import "color";
 @import "style";
-@import "bootstrap";
- 
+
 body {
   font-family: Averta !important;
   width: 100%;
   overflow-x: hidden;
+  color: red;
 }
 
 a {
   text-decoration: none !important;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-a,
-p {
-  // font-family: $font-family-sans-serif;
-  // font-family: "Arial", sans-serif;
+// ---------------TEXT-----------------------
+div.custom-text-light {
+  color: $color-text-light;
 }
+// -----------customize antd UI -----------------------
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
+li.ant-menu-item {
+  font-weight: bold;
+  &::after {
+    border-bottom: none !important ;
+  }
 }
-
-.main {
-  width: 100%;
-  margin: 40px auto 60px;
-}
-
-p {
+.ant-table-wrapper {
+  .ant-table-thead {
+    & > tr > th {
+      background: transparent;
+    }
+  }
+  ul.ant-table-pagination {
+    justify-content: center;
+    li.ant-pagination-item {
+      border-radius: 50%;
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
 }

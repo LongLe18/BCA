@@ -1,0 +1,23 @@
+.body-info {
+    padding: 100px;
+    background-color: #ffc8002e;
+    .col-info {
+        h1 {
+            line-height: 1.4;
+            font-weight: 530;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    }
+    .readmore {
+        margin-top: 20px;
+        a {
+            margin-left: 10px;
+            color: rgba(204, 0, 0, 0.8);
+            font-weight: 600;
+        }
+        button {
+            background-color: rgba(204, 0, 0, 0.8);
+        }
+    }
+}
