@@ -5,6 +5,8 @@ import { Layout } from 'antd';
 
 import Slider from "../../components/common/ui-component/slider/Slider";
 import Info from "./info/Info";
+import Department from "./department/Department";
+import Timetable from "./timetable/Timetable";
 
 import "./Home.scss";
 
@@ -21,6 +23,8 @@ const Home = () => {
     <Content className="Home site-layout">
       <Slider />
       <Info />
+      <Department />
+      <Timetable />
     </Content>
   );
 };
