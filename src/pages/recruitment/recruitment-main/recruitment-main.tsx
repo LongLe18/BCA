@@ -1,10 +1,12 @@
 import React, {useEffect} from "react";
+import {useSelector, useDispatch} from "react-redux";
 import {Typography} from "antd";
 import {Table, Tag} from "antd";
 import {columns, DataType} from "./recruitment-main.config";
 import "./recruitment-main.scss";
 import {useNavigate} from "react-router-dom";
 import {Col, Row} from "antd";
+import {setCurrentPage} from "redux/actions";
 const data: DataType[] = [
   {
     key: "1",
@@ -33,10 +35,13 @@ const data: DataType[] = [
 ];
 const {Title, Text} = Typography;
 const RecruitmentMain = () => {
-  useEffect(() => {}, []);
-  const directToDetail = () => {
-    const navigate = useNavigate();
-  };
+  const data1 = useSelector<any>(state => state.common.page);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    console.log(data1);
+    dispatch(setCurrentPage("test"));
+  }, []);
+
   return (
     <div className="recruitment-page container">
       <Row className="header">
