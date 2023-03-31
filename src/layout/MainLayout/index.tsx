@@ -3,12 +3,11 @@ import {Outlet} from "react-router-dom";
 import FooterCustom from "./Footer/Footer";
 import HeaderCustom from "./Header/Header";
 import {Layout, Space} from "antd";
-const {Content} = Layout;
 import "./index.scss";
+
+const {Content} = Layout;
 const contentStyle: React.CSSProperties = {
   backgroundColor: "#ffffff",
-  paddingTop: 72,
-  paddingBottom: 72,
 };
 
 const MainLayout = () => {

@@ -176,25 +176,10 @@ const FooterCustom = () => {
             onClick={e => setCurrent(e.key)}
           />
         </div>
-        <span id="info">
-          Nếu bạn quan tâm đến các thông tin của Cục Y tế - Bộ Công An, hãy theo
-          dõi các kênh sau để không bị bỏ lỡ!
-        </span>
-        <div
-          className="container d-flex align-items-center justify-content-center"
-          style={{marginTop: 50}}
-        >
-          <Input
-            placeholder="Email"
-            type="email"
-            style={{width: "20%", height: 55, marginRight: 10}}
-          />
-          <Button
-            type="primary"
-            style={{backgroundColor: "#e03e1a", height: 55}}
-          >
-            Đăng ký
-          </Button>
+        <span id="info">Nếu bạn quan tâm đến các thông tin của Cục Y tế - Bộ Công An, hãy theo dõi các kênh sau để không bị bỏ lỡ!</span>
+        <div className="container d-flex align-items-center justify-content-center" style={{marginTop: 50}}>
+          <Input placeholder="Email" type="email" style={{width: '20%', height: 55, marginRight: 10}}/>
+          <Button type='primary' style={{backgroundColor: '#e03e1a', height: 55}}>Đăng ký</Button>
         </div>
         <div
           className="container d-flex align-items-center justify-content-center"

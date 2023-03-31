@@ -1,0 +1,60 @@
+.slider {
+    padding-top: 100px;
+    h1 {
+        color: white;
+        text-align: left;
+        font-size: 50px;
+        word-spacing: 5px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+    .row-1 > span{
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 30px;
+        color: #d8b3b3;
+    }
+    .row-1 a {
+        color: #ffdf00;
+        font-size: 16px;
+    }
+    .row-1 > div {
+        margin-top: 30px;
+    }
+    #container {
+
+    }
+    img {
+        width: 600px;
+        border-radius: 12px;
+    }
+    .label-slider {
+        font-weight: 14px;
+        color: white
+    }
+    .row-2 {
+        margin-bottom: 70px; 
+        justify-content: space-between;
+        .ant-slider {
+            width: 70%;
+        }
+        .label-slider {
+            margin: 0;
+        }
+        .button-next {
+            width: 7%;
+            button {
+                background-color: rgba(255, 255, 255, 0.2);
+                border-color: rgba(255, 255, 255, 0.2);
+                color: #fff;
+            }
+        }
+    }
+    .scrolldown {
+        display: block;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 70px; 
+    }
+}
