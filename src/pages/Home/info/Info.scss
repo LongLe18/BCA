@@ -1,6 +1,8 @@
+@import "assets/styles/_color.scss";
+
 .body-info {
     padding: 150px;
-    background-color: #ffc8002e;
+    background-color: $color-primary3;
     .col-info {
         h1 {
             line-height: 1.4;

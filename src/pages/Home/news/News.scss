@@ -1,0 +1,64 @@
+@import "assets/styles/_color.scss";
+
+.news-info {
+    padding: 100px;
+    background-color: $color-primary3;
+    .title {
+        display: flex;
+        align-items: center;
+    }
+    .title > h3 {
+        font-weight: 600;
+    }
+    .readmore {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        a, button {
+            font-size: 16px;
+            color: $color-primary;
+        }
+    }
+    .big-news {
+        background-color: $color-primary3;
+        border: none;
+        img {
+            height: 385px;
+        }
+    }
+    .little-news {
+        img {
+            height: 300px;
+        }
+    }
+    .ant-card-meta-detail {
+        .ant-card-meta-date {
+            color: #a29e93;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            span {
+                color: $color-primary;
+                letter-spacing: 0.5px;
+            }
+        }
+        .ant-card-meta-title {
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+    }
+}
+
+:where(.css-dev-only-do-not-override-16co30o).ant-card-hoverable:hover {
+    border-color: transparent;
+    box-shadow: none; 
+}
+
+:where(.css-dev-only-do-not-override-16co30o).ant-card .ant-card-cover img {
+    border-radius: 8px 8px 8px 8px;
+}
+
+:where(.css-dev-only-do-not-override-16co30o).ant-card .ant-card-body {
+    padding: 24px 24px 24px 0px;
+    border-radius: 0 0 8px 8px;
+}

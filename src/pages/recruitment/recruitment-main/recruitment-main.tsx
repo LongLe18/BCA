@@ -39,7 +39,7 @@ const RecruitmentMain = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     console.log(data1);
-    dispatch(setCurrentPage("test"));
+    // dispatch(setCurrentPage("test"));
   }, []);
 
   return (
