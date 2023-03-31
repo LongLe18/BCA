@@ -168,7 +168,7 @@ const HeaderCustom = () => {
     {
       key: "about",
       label: (
-        <a className="nav-link scrollto link-to" href="#about">
+        <a className="nav-link scrollto link-to" href="/introduce">
           Giới thiệu
         </a>
       ),

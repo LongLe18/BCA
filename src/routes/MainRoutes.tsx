@@ -9,6 +9,8 @@ import {Outlet} from "react-router-dom";
 
 const Home = Loadable(lazy(() => import("../pages/Home/Home")));
 const Login = Loadable(lazy(() => import("pages/Login/Login")));
+const Introduce = Loadable(lazy(() => import("pages/Introduce/Introduce")));
+
 const RecruitmentMain = Loadable(
   lazy(() => import("pages/recruitment/recruitment-main/recruitment-main"))
 );
@@ -24,6 +26,10 @@ let MainRoutes = [
       {
         path: "/recruitment",
         element: <RecruitmentMain />,
+      },
+      {
+        path: "/introduce",
+        element: <Introduce /> 
       },
       // ----------- Nested Routed----------
       // {
