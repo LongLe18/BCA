@@ -1,12 +1,15 @@
 import React, {useEffect} from "react";
-import {useSelector, useDispatch} from "react-redux";
 import {Typography} from "antd";
 import {Table, Tag} from "antd";
 import {columns, DataType} from "./recruitment-main.config";
 import "./recruitment-main.scss";
 import {useNavigate} from "react-router-dom";
 import {Col, Row} from "antd";
-import {setCurrentPage} from "redux/actions";
+
+// redux
+import { useSelector, useDispatch } from "react-redux";
+import * as commonActions from '../../../redux/actions/common';
+
 const data: DataType[] = [
   {
     key: "1",
@@ -33,14 +36,15 @@ const data: DataType[] = [
     deadline: "27 tháng 3, 2021",
   },
 ];
-const {Title, Text} = Typography;
+const { Title, Text } = Typography;
 const RecruitmentMain = () => {
   const data1 = useSelector<any>(state => state.common.page);
   const dispatch = useDispatch();
+
   useEffect(() => {
-    console.log(data1);
-    dispatch(setCurrentPage("test"));
-  }, []);
+    console.log('test')
+    // dispatch(commonActions.setCurrentPage());
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="recruitment-page container">

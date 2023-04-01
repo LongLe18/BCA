@@ -9,7 +9,7 @@ const Info = () => {
         <section className="body-info">
             <div className="container">
 
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 70, justifyContent: 'space-between'}}>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="row-body">
                     <Col className="gutter-row row-1" span={12} style={{textAlign: 'center'}}>
                         <img src={require('assets/images/bca.png')} alt="logo-bca"/>
                     </Col>

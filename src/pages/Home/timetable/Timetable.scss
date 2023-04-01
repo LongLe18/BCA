@@ -1,0 +1,102 @@
+@import "assets/styles/variables";
+
+.timetable-info {
+    padding: 200px 150px 200px 150px;
+    background-color: rgb(246, 246, 246);
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url('../../../assets/images/phong-kham.png');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    .timetable-logo {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        h5 {
+            font-size: 30px;
+            font-weight: 600;
+            color: white;
+            letter-spacing: 1px;
+        }
+    }
+    .one-box {
+        flex-direction: column;
+        background-color: #006839;
+        padding: 50px 50px 100px 50px;
+        align-items: center;
+        border-radius: 10px;
+        h5 {
+            color: white;
+        }
+        span {
+            color: #a7cbba;
+        }
+        img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .detail {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            text-align: center;
+            line-height: 2;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .timetable-info {
+        padding: 150px 0 0 0;
+        .timetable-logo {
+            img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            h5 {
+                font-size: 36px;
+                font-weight: 600;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+        }
+        .row-timetable {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            flex-direction: column;
+            .col-info {
+                margin-bottom: 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        .one-box {
+            h5 {
+                color: white;
+                font-size: 30px;
+            }
+            span {
+                color: #a7cbba;
+            }
+            img {
+                width: 200px;
+                margin-bottom: 10px;
+            }
+            .detail {
+                font-size: 24px;
+            }
+        }
+    }
+}

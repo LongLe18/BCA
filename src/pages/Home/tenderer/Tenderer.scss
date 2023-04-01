@@ -1,0 +1,114 @@
+@import "assets/styles/_color.scss";
+@import "assets/styles/variables";
+
+.tenderer-info {
+    padding: 100px;
+    background-color: $color-primary3;
+    .title {
+        display: flex;
+        align-items: center;
+    }
+    .title > h3 {
+        font-weight: 600;
+    }
+    .readmore {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        a, button {
+            font-size: 16px;
+            color: $color-primary;
+        }
+    }
+    .row-tenderer-news {
+        margin-bottom: 30px;
+        justify-content: space-between
+    }
+    .tenderer-news {
+        background-color: $color-primary3;
+        flex-direction: row-reverse;
+        display: flex;
+        img {
+            height: 100%;
+        }
+    }
+    .ant-card-body {
+        width: 90%;
+    }
+    .ant-card-meta-detail {
+        .ant-card-meta-date {
+            color: #a29e93;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            span {
+                color: $color-primary;
+                letter-spacing: 0.5px;
+            }
+        }
+        .ant-card-meta-title {
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+    }
+    .document-guide {
+        font-size: 24px;
+        font-weight: 600;
+        padding-left: 64px !important;
+        padding-right: 64px !important; 
+        .ant-divider {
+            border-inline-start: 3px solid $color-primary;
+        }
+        .title-notice {
+            margin-bottom: 30px;
+        }
+        .notice-button {
+            background-color: #fef1cc;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 24px;
+            img {
+                width: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .tenderer-info {
+        padding: 100px 0px 0 0;
+        .row-tenderer-news {
+            flex-direction: column;
+        }
+        .document-guide {
+            max-width: 100%;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        .col-tenderer-news {
+            max-width: 100%;
+        }
+        .ant-card-cover {
+            img {
+                width: 150px;
+            }
+        }
+        .ant-card-body {
+            width: 70%;
+            .ant-card-meta-title {
+                overflow: visible;
+                white-space: unset;
+                text-overflow: ellipsis;
+            }
+            .ant-card-meta-description {
+                display: none;
+            }
+        }
+    }
+}

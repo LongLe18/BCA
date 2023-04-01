@@ -1,0 +1,124 @@
+@import "assets/styles/_color.scss";
+@import "assets/styles/variables";
+
+.Department {
+    padding-top: 600px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('../../assets/images/group.png');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    .title {
+        display: flex;
+        align-items: center;
+        img {
+            width: 150px;
+            margin-right: 10px;
+        }
+        h3 {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .readmore {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-primary;
+            padding: 24px !important;
+        }
+        a {
+            margin-left: 10px;
+            color: $color-primary;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+}
+
+.Department-content {
+    background-color: #fff;
+    .container {
+        margin-top: 100px;
+    }
+    .row-content-department {
+        margin-bottom: 100px; 
+        justify-content: space-between;
+    }
+    .left-content {
+        height: 700px;
+        overflow-y: scroll;
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            img {
+                width: 100px;
+                margin-right: 10px;
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 28px;
+            }
+        }
+    }
+    .right-content{
+        .ant-menu {
+            border-radius: 10px;
+            border: 1px solid #e0dbdb;
+            background-color: transparent;
+        }
+        .ant-menu-root {
+            padding: 24px;
+        }
+        .ant-menu-title-content {
+            color: $color-primary;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .ant-menu-item {
+            span {
+                color: #8c8d8d
+            }
+        }
+        :where(.css-dev-only-do-not-override-16co30o).ant-menu-light.ant-menu-inline .ant-menu-sub.ant-menu-inline {
+            background: none;
+            border: none;
+        }
+        .ant-menu-submenu-arrow {
+            display: none;
+        }
+    }
+    .left-content::-webkit-scrollbar {
+        display: none;
+    }
+    .introduce-content {
+        padding-right: 24px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .Department-content {
+        .row-content-department {
+            flex-direction: column-reverse;
+        }
+        .left-content {
+            max-width: 100%;
+            .introduce-content {
+                padding-right: 0px;
+            }
+        }
+        .right-content {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}
