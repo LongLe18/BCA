@@ -9,9 +9,18 @@ import {Outlet} from "react-router-dom";
 
 const Home = Loadable(lazy(() => import("../pages/Home/Home")));
 const Login = Loadable(lazy(() => import("pages/Login/Login")));
+const NewsMain = Loadable(lazy(() => import("pages/News/news-main/news-main")));
+const NewsDetail = Loadable(
+  lazy(() => import("pages/News/news-detail/news-detail"))
+);
 const RecruitmentMain = Loadable(
   lazy(() => import("pages/recruitment/recruitment-main/recruitment-main"))
 );
+const RecruitmentDetail = Loadable(
+  lazy(() => import("pages/recruitment/recruitment-detail/recruitment-detail"))
+);
+const Document = Loadable(lazy(() => import("pages/Document/document")));
+const Contact = Loadable(lazy(() => import("pages/Contact/contact")));
 let MainRoutes = [
   {
     path: "/",
@@ -22,15 +31,30 @@ let MainRoutes = [
         element: <Home />,
       },
       {
-        path: "/recruitment",
-        element: <RecruitmentMain />,
+        path: "/document",
+        element: <Document />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       // ----------- Nested Routed----------
-      // {
-      //   path: "/recruitment",
-      //   element: <Outlet />,
-      //   children: [{path: "", element: <RecruitmentMain />}],
-      // },
+      {
+        path: "/recruitment",
+        element: <Outlet />,
+        children: [
+          {path: "", element: <RecruitmentMain />},
+          {path: "/recruitment/detail/:id", element: <RecruitmentDetail />},
+        ],
+      },
+      {
+        path: "/news",
+        element: <Outlet />,
+        children: [
+          {path: "", element: <NewsMain />},
+          {path: "/news/detail/:id", element: <NewsDetail />},
+        ],
+      },
       // --------Multi-PrivateOutlet-----------
       // {
       //     element: <PrivateOutlet></PrivateOutlet>,

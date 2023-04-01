@@ -39,11 +39,11 @@ const RecruitmentMain = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     console.log(data1);
-    dispatch(setCurrentPage("test"));
+    // dispatch(setCurrentPage("test"));
   }, []);
 
   return (
-    <div className="recruitment-page container">
+    <div className="recruitment-page page container">
       <Row className="header">
         <Col>
           <Title className="title">

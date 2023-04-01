@@ -11,7 +11,14 @@ body {
 
 a {
   text-decoration: none !important;
+  color: $color-text-black !important;
 }
+
+//--------------- PAGE-----------------------
+.page {
+  padding: 72px 0 72px 0;
+}
+
 // ---------------TEXT-----------------------
 div.custom-text-light {
   color: $color-text-light;
@@ -38,4 +45,7 @@ li.ant-menu-item {
       background-color: $color-primary;
     }
   }
+}
+.ant-divider-horizontal {
+  margin: 0 !important;
 }

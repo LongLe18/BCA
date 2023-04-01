@@ -166,7 +166,7 @@ const HeaderCustom = () => {
     {
       key: "document",
       label: (
-        <a className="nav-link scrollto" href="#services">
+        <a className="nav-link scrollto" href="/document">
           Văn bản
         </a>
       ),
@@ -174,7 +174,7 @@ const HeaderCustom = () => {
     {
       key: "news",
       label: (
-        <a className="nav-link scrollto" href="#services">
+        <a className="nav-link scrollto" href="/news">
           Tin tức
         </a>
       ),
@@ -182,7 +182,7 @@ const HeaderCustom = () => {
     {
       key: "contact",
       label: (
-        <a className="nav-link scrollto" href="#contact">
+        <a className="nav-link scrollto" href="/contact">
           Liên hệ
         </a>
       ),
