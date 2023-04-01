@@ -16,7 +16,7 @@ const Department = () => {
                     />
                     <h5>Các Phòng Ban</h5>
                 </Link>
-                <Carousel autoplay style={{height: 400}} arrows={true}>
+                <Carousel autoplay style={{height: 400}} arrows={true} className="web">
                     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
                         <img src={require('assets/images/department1.png')} alt="department1"/>
                         <img src={require('assets/images/department2.png')} alt="department2"/>
@@ -25,6 +25,29 @@ const Department = () => {
                     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
                         <img src={require('assets/images/department4.png')} alt="department4"/>
                         <img src={require('assets/images/department5.png')} alt="department5"/>
+                        <img src={require('assets/images/department6.png')} alt="department6"/>
+                    </Row>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
+                        <img src={require('assets/images/department7.png')} alt="department7"/>
+                    </Row>
+                </Carousel>
+                <Carousel autoplay style={{height: 400}}  className="mobile">
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
+                        <img src={require('assets/images/department1.png')} alt="department1"/>
+                    </Row>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
+                        <img src={require('assets/images/department2.png')} alt="department2"/>
+                    </Row>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
+                        <img src={require('assets/images/department3.png')} alt="department3"/>
+                    </Row>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
+                        <img src={require('assets/images/department4.png')} alt="department4"/>
+                    </Row>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
+                        <img src={require('assets/images/department5.png')} alt="department5"/>
+                    </Row>
+                    <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 
                         <img src={require('assets/images/department6.png')} alt="department6"/>
                     </Row>
                     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="rowcarousel"> 

@@ -1,4 +1,5 @@
 @import "assets/styles/_color.scss";
+@import "assets/styles/variables";
 
 .Department {
     padding-top: 600px;
@@ -48,6 +49,10 @@
     .container {
         margin-top: 100px;
     }
+    .row-content-department {
+        margin-bottom: 100px; 
+        justify-content: space-between;
+    }
     .left-content {
         height: 700px;
         overflow-y: scroll;
@@ -94,5 +99,26 @@
     }
     .left-content::-webkit-scrollbar {
         display: none;
+    }
+    .introduce-content {
+        padding-right: 24px;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .Department-content {
+        .row-content-department {
+            flex-direction: column-reverse;
+        }
+        .left-content {
+            max-width: 100%;
+            .introduce-content {
+                padding-right: 0px;
+            }
+        }
+        .right-content {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
     }
 }

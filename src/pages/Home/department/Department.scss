@@ -1,4 +1,6 @@
 @import "assets/styles/_color.scss";
+@import "assets/styles/variables";
+
 
 .department-info {
     padding: 200px 150px 200px 150px;
@@ -75,5 +77,39 @@
     .slick-dots li.slick-active button {
         background: $color-primary;
     }
+    .mobile {
+        display: none;
+    }
+    .web {
+        display: block;
+    }
+}
 
+@media only screen and (max-width: $breakpoint-md) {
+    .department-info {
+        padding: 150px 0 0 0;
+        .department-logo {
+            img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            h5 {
+                font-size: 36px;
+                font-weight: 600;
+                color: black;
+                letter-spacing: 1px;
+            }
+        }
+        .web {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .rowcarousel {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }

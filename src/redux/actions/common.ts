@@ -1,7 +1,9 @@
 import * as types from "./types";
-export const setCurrentPage = currentPage => {
+
+export function setCurrentPage(params?, callback?) {
   return {
-    type: types.SET_CURRENT_PAGE,
-    data: currentPage,
+      type: types.SET_CURRENT_PAGE,
+      params,
+      callback,
   };
-};
+}

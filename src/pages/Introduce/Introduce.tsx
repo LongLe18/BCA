@@ -65,7 +65,7 @@ const Introduce = () => {
               },
             ]}
           />
-          <Row  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 150, marginTop: 30, justifyContent: 'space-between'}}>
+          <Row  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="row-introduce">
             <Col span={12} className="left-introduce">
               <div className="title-introduce">Giới thiệu quá trình hình thành và phát triển của Cục Y tế Bộ Công an trong 45 năm</div>
               <img src={require('assets/images/bca.png')} alt="logo-bca"/>
@@ -88,14 +88,14 @@ const Introduce = () => {
       </section>
       <section className="second-introduce">
         <div className="container">
-          <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 100, justifyContent: 'space-between'}}>
+          <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="row-content">
             <Col span={16} className="left-content">
               <div className="title">
                 <img src={require('assets/images/bca.png')} alt="logo-bca"/>
                 <h3>Quá trình xây dựng và trưởng thành</h3>
                     
               </div>
-              <div style={{paddingRight: 24,}}>
+              <div className="introduce-content">
                 <b style={{fontWeight: 500, fontSize: 20,}}>1. Trong thời kì đầu xây dựng chủ nghĩa xã hội và bảo vệ Tổ quốc (Giai đoạn 1977 - 1986).</b><br/><br/>
                 <div style={{color: '#5f6061', fontSize: 16,}}>
                 Ngày 21/01/1977, Bộ Nội vụ đã tham mưu, đề xuất Thủ tướng Chính phủ ban hành Quyết định số 08/CP tách Vụ Tài vụ - Vật tư thành 05 Vụ, Cục trong đó có Cục Bảo vệ sức khỏe (nay là Cục Y tế). Từ đây, Cục Bảo vệ sức khỏe hoạt động có tính chất chuyên sâu về chuyên môn (cả đào tạo, bồi dưỡng cán bộ, nghiên cứu khoa học..) và mở rộng, phát triển mạng lưới trong toàn ngành.<br/><br/>

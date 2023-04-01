@@ -1,8 +1,13 @@
 @import "assets/styles/_color.scss";
+@import "assets/styles/variables";
 
 .news-info {
     padding: 100px;
     background-color: $color-primary3;
+    .row-title {
+        margin-bottom: 30px;
+        justify-content: space-between;
+    }
     .title {
         display: flex;
         align-items: center;
@@ -61,4 +66,48 @@
 :where(.css-dev-only-do-not-override-16co30o).ant-card .ant-card-body {
     padding: 24px 24px 24px 0px;
     border-radius: 0 0 8px 8px;
+}
+
+@media only screen and (max-width: $breakpoint-md) {
+    .news-info {
+        padding: 100px 0 0 0;
+        .big-news img {
+            height: 300px;
+        }
+        .row-title {
+            align-items: center;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        .readmore {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            a, button {
+                font-size: 20px;
+            }
+        }
+        .col-news {
+            max-width: 100%;
+        }
+        .ant-card-meta-title {
+            overflow: visible;
+            white-space: unset;
+            text-overflow: ellipsis;
+        }
+        .col-news-little {
+            img {
+                height: 200px;
+            }
+            max-width: 50%;
+            flex: 0 0 50%;
+            
+            .ant-card-meta-date {
+                height: 44px;
+            }
+            .ant-card-meta-description {
+                display: none;
+            }
+        }
+    }
 }

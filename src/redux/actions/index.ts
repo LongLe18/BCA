@@ -1,1 +1,5 @@
-export {setCurrentPage} from "./common";
+import * as common from './common';
+
+export {
+    common
+}

@@ -8,7 +8,7 @@ const News = () => {
     return (
         <section className="news-info">
             <div className="container">
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 30, justifyContent: 'space-between'}}>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="row-title">
                     <div className="title">
                         <img src={require('assets/images/logo/logo2.png')} alt="logo-bca"/>
                         <h3>Tin tức</h3>
@@ -18,8 +18,8 @@ const News = () => {
                         <Button type="text" shape="circle" icon={<ArrowRightOutlined />} danger size="large" style={{padding: 0}}/>
                     </div>
                 </Row>
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 30, justifyContent: 'space-between'}}>
-                    <Col span={12}>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="row-title">
+                    <Col span={12} className="col-news">
                         <Card className="big-news"
                             hoverable
                             cover={<img alt="example" src="https://i.ex-cdn.com/doanhnhanphaply.vn/files/content/2022/08/10/tl-1042.jpg" />}
@@ -37,7 +37,7 @@ const News = () => {
                             </div>
                         </Card>
                     </Col>
-                    <Col span={12}>
+                    <Col span={12} className="col-news">
                         <Card className="big-news"
                             hoverable
                             cover={<img alt="example" src="http://benhvienbaichay.vn/uploads/news/63f478da53aed/z3317440601728-f55548f6d3965429534901f6789cd914-1.jpg" />}
@@ -58,7 +58,7 @@ const News = () => {
                 </Row>
                 <Divider />
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 70, justifyContent: 'space-between'}}>
-                    <Col span={8}>
+                    <Col span={8} className="col-news-little">
                         <Card className="big-news little-news"
                             hoverable
                             cover={<img alt="example" src="https://i.ex-cdn.com/doanhnhanphaply.vn/files/content/2022/08/10/tl-1042.jpg" />}
@@ -76,7 +76,7 @@ const News = () => {
                             </div>
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col span={8} className="col-news-little">
                         <Card className="big-news little-news"
                             hoverable
                             cover={<img alt="example" src="http://benhvienbaichay.vn/uploads/news/63f478da53aed/z3317440601728-f55548f6d3965429534901f6789cd914-1.jpg" />}
@@ -94,7 +94,7 @@ const News = () => {
                             </div>
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col span={8} className="col-news-little">
                         <Card className="big-news little-news"
                             hoverable
                             cover={<img alt="example" src="http://benhvienbaichay.vn/uploads/news/63f478da53aed/z3317440601728-f55548f6d3965429534901f6789cd914-1.jpg" />}

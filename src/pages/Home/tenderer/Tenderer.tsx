@@ -14,8 +14,8 @@ const Tenderer = () => {
                         <h3>Thông báo mời thầu</h3>
                     </div>
                 </Row>
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{marginBottom: 30, justifyContent: 'space-between'}}>
-                    <Col span={14}>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} className="row-tenderer-news">
+                    <Col span={14} className="col-tenderer-news">
                         <Card className="tenderer-news"
                             hoverable
                             cover={<img alt="example" src="https://i.ex-cdn.com/doanhnhanphaply.vn/files/content/2022/08/10/tl-1042.jpg" />}

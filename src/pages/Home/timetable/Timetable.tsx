@@ -16,7 +16,7 @@ const Timetable = () => {
                     />
                     <h5>Lịch làm việc trong giờ hành chính</h5>
                 </Link>
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{justifyContent: 'space-around'}}>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{justifyContent: 'space-around'}} className="row-timetable">
                     <Col className="gutter-row col-info" span={7}>
                         <div className="d-flex justify-content-between one-box">
                             <img src={require('assets/images/icon/phone.png')} alt="phone"/>
