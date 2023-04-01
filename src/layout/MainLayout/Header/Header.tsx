@@ -42,9 +42,8 @@ const items: MenuProps["items"] = [
     key: "1",
     label: (
       <a 
-        target="_blank"
         rel="noopener noreferrer"
-        href="https://www.antgroup.com"
+        href="/department"
       >
         Phòng tổng hợp
       </a>
@@ -54,7 +53,6 @@ const items: MenuProps["items"] = [
     key: "2",
     label: (
       <a 
-        target="_blank"
         rel="noopener noreferrer"
         href="https://www.aliyun.com"
       >
@@ -66,7 +64,6 @@ const items: MenuProps["items"] = [
     key: "3",
     label: (
       <a 
-        target="_blank"
         rel="noopener noreferrer"
         href="https://www.luohanacademy.com"
       >
@@ -78,7 +75,6 @@ const items: MenuProps["items"] = [
     key: "4",
     label: (
       <a
-        target="_blank"
         rel="noopener noreferrer"
         href="https://www.luohanacademy.com"
       >
@@ -90,7 +86,6 @@ const items: MenuProps["items"] = [
     key: "5",
     label: (
       <a 
-        target="_blank"
         rel="noopener noreferrer"
         href="https://www.luohanacademy.com"
       >
@@ -102,7 +97,6 @@ const items: MenuProps["items"] = [
     key: "6",
     label: (
       <a 
-        target="_blank"
         rel="noopener noreferrer"
         href="https://www.luohanacademy.com"
       >
@@ -114,7 +108,6 @@ const items: MenuProps["items"] = [
     key: "7",
     label: (
       <a
-        target="_blank"
         rel="noopener noreferrer"
         href="https://www.luohanacademy.com"
       >

@@ -42,7 +42,7 @@ const items: MenuProps['items'] = [
   ]),
 ];
 
-const Home = () => {
+const Introduce = () => {
   const onClick: MenuProps['onClick'] = (e) => {
     console.log('click ', e);
   };
@@ -121,4 +121,4 @@ const Home = () => {
     </Content>
   );
 };
-export default Home;
+export default Introduce;
