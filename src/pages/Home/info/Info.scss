@@ -2,74 +2,76 @@
 @import "assets/styles/variables";
 
 .body-info {
-    padding: 150px;
-    background-color: $color-primary3;
-    .col-info {
-        h1 {
-            line-height: 1.4;
-            font-weight: 530;
-            font-size: 36px;
-            margin-bottom: 30px;
-        }
+  padding: 150px;
+  background-color: $color-primary3;
+  .col-info {
+    h1 {
+      line-height: 1.4;
+      font-weight: 530;
+      font-size: 36px;
+      margin-bottom: 30px;
     }
-    .row-body {
-        margin-bottom: 70; 
-        justify-content: space-between;
+  }
+  .row-body {
+    margin-bottom: 70;
+    justify-content: space-between;
+  }
+  .readmore {
+    margin-top: 20px;
+    a {
+      margin-left: 10px;
+      color: rgba(204, 0, 0, 0.8);
+      font-weight: 600;
     }
-    .readmore {
-        margin-top: 20px;
-        a {
-            margin-left: 10px;
-            color: rgba(204, 0, 0, 0.8);
-            font-weight: 600;
-        }
-        button {
-            background-color: rgba(204, 0, 0, 0.8);
-        }
+    button {
+      background-color: rgba(204, 0, 0, 0.8);
+      span {
+        display: block;
+      }
     }
-    
+  }
 }
 
 @media only screen and (max-width: $breakpoint-md) {
-    .body-info {
-        padding: 150px 0px 0px 0px;
-        .row-body {
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-            align-items: center;
-            margin-left: 0 !important; 
-            margin-right: 0 !important;
-            .row-1 {
-                width: 100%;
-                max-width: 100%;
-                img {
-                    width: 100%;
-                }
-            }
-            .col-info {
-                width: 100%;
-                max-width: 100%;
-                h1 {
-                    text-align: center;
-                }
-            }
+  .body-info {
+    padding: 150px 0px 0px 0px;
+    .row-body {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      .row-1 {
+        width: 100%;
+        max-width: 100%;
+        img {
+          width: 100%;
         }
-
-        .readmore {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            a {
-                font-size: 20px;
-            }
-            margin-bottom: 30px;
+      }
+      .col-info {
+        width: 100%;
+        max-width: 100%;
+        h1 {
+          text-align: center;
         }
-        .readmore > button {
-            padding: 24px !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      }
     }
+
+    .readmore {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      a {
+        font-size: 20px;
+      }
+      margin-bottom: 30px;
+    }
+    .readmore > button {
+      padding: 24px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

@@ -1,7 +1,8 @@
 import React from "react";
+import {Space} from "antd";
 import type {ColumnsType} from "antd/es/table";
 import {Link} from "react-router-dom";
-import { Tag } from "antd";
+import {Tag} from "antd";
 
 export interface DataType {
   key: string;
@@ -18,10 +19,11 @@ export const columns: ColumnsType<DataType> = [
     dataIndex: "job",
     key: "job",
     render: (text, record) => (
-      <Link className="job" to={`/recruitment/detail/${record.key}`}>{text}
-        <Tag color="#f32425">
-          Hot
-        </Tag>
+      <Link className="job" to={`/recruitment/detail/${record.key}`}>
+        <Space size="small">
+          {text}
+          <Tag color="#c83b3c">Hot</Tag>
+        </Space>
       </Link>
     ),
     // onCell: (record, rowIndex) => {

@@ -11,7 +11,15 @@ body {
 
 a {
   text-decoration: none !important;
-  color: $color-text-black !important;
+  // color: $color-text-black !important;
+}
+button {
+  span {
+    display: block !important;
+  }
+}
+.readmore {
+  color: $color-primary !important;
 }
 
 //--------------- PAGE-----------------------
@@ -61,4 +69,10 @@ li.ant-menu-item {
 }
 .ant-divider-horizontal {
   margin: 0 !important;
+}
+.ant-breadcrumb-link {
+  a {
+    color: $color-text-light !important;
+    font-weight: normal !important;
+  }
 }

@@ -2,33 +2,35 @@
 @import "assets/styles/variables";
 
 .recruitment-info {
-    padding: 100px;
-    background-color: $color-primary2;
-    .title {
-        display: flex;
-        align-items: center;
+  padding: 100px;
+  background-color: $color-primary2;
+  .title {
+    display: flex;
+    align-items: center;
+  }
+  .title > h3 {
+    font-weight: 600;
+  }
+  .readmore {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    a,
+    button {
+      font-weight: bold;
+      font-size: 16px;
+      color: $color-primary;
     }
-    .title > h3 {
-        font-weight: 600;
-    }
-    .readmore {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        a, button {
-            font-size: 16px;
-            color: $color-primary;
-        }
-    }
-    .job {
-        font-size: 20px;
-        font-weight: 500;
-        color: #1a1b1d;
-    }
+  }
+  .job {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1b1d;
+  }
 }
 
 @media only screen and (max-width: $breakpoint-md) {
-    .recruitment-info {
-        padding: 100px 0px 0 0;
-    }
+  .recruitment-info {
+    padding: 100px 0px 0 0;
+  }
 }

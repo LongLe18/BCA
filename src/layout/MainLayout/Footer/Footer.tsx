@@ -76,7 +76,7 @@ const items: MenuProps["items"] = [
 
 const FooterCustom = () => {
   const {token} = useToken();
-  const [current, setCurrent] = useState("home");
+  const [current, setCurrent] = useState("");
 
   const contentStyle = {
     backgroundColor: token.colorBgElevated,
@@ -88,7 +88,7 @@ const FooterCustom = () => {
     {
       key: "home",
       label: (
-        <a className="nav-link scrollto active" href="#hero">
+        <a className="nav-link scrollto" href="#hero">
           Trang chủ
         </a>
       ),

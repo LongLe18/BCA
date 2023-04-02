@@ -13,16 +13,17 @@ const root = createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
         <BrowserRouter>
-        <App />
 
-            {/* <ConfigProvider
+
+            <ConfigProvider
                 theme={{
                     token: {
                         colorPrimary: '#C83B3C',
                     },
                 }}
             >
-            </ConfigProvider> */}
+                <App />
+            </ConfigProvider>
 
         </BrowserRouter>
     </Provider>

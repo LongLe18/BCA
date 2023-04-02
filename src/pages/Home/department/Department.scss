@@ -1,115 +1,123 @@
 @import "assets/styles/_color.scss";
 @import "assets/styles/variables";
 
-
 .department-info {
-    padding: 200px 150px 200px 150px;
-    background-color: $color-primary2;
-    .department-logo {
-        justify-content: center;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
-        img {
-            width: 100px;
-            margin-bottom: 20px;
-        }
-        h5 {
-            font-size: 26px;
-            font-weight: 600;
-            color: black;
-            letter-spacing: 1px;
-        }
+  padding: 200px 150px 200px 150px;
+  background-color: $color-primary2;
+  .department-logo {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    img {
+      width: 100px;
+      margin-bottom: 20px;
     }
-    .rowcarousel {
-        display: flex !important;
-        justify-content: space-around;
-        img {
-            width: 30%;
-        }
+    h5 {
+      font-size: 26px;
+      font-weight: 600;
+      color: black;
+      letter-spacing: 1px;
     }
-    .slick-arrow.slick-prev {
-        font-size: 10px;
+  }
+  .slick-slider {
+    img {
+      margin: auto !important;
     }
-    .ant-carousel .slick-prev::before {
-        content: '<';
-        display: block;
-        position: relative;
-        bottom: 20px;
-        right: 3px;
-        font-size: 25px;
-        color: #bdb9b9;
-        background-color: rgb(246, 246, 246);;
-        border: 1px solid #bdb9b9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 44px;
-        height: 44px;
-         
+  }
+  .slick-list {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+  .rowcarousel {
+    display: flex !important;
+    justify-content: space-around;
+    img {
+      width: 30%;
     }
-    .slick-arrow.slick-next {
-        font-size: 10px;
-    }
-    .ant-carousel .slick-next::before {
-        content: '>';
-        display: block;
-        position: relative;
-        right: 3px;
-        bottom: 20px;
-        font-size: 25px;
-        color: #bdb9b9;
-        background-color: rgb(246, 246, 246);
-        border: 1px solid #bdb9b9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 44px;
-        height: 44px;
-    }
-    .slick-dots li button {
-        background: rgb(181, 180, 180);
-    }
-    .slick-dots li.slick-active button {
-        background: $color-primary;
-    }
-    .mobile {
-        display: none;
-    }
-    .web {
-        display: block;
-    }
+  }
+  .slick-arrow.slick-prev {
+    font-size: 10px;
+  }
+  .ant-carousel .slick-prev::before {
+    content: "<";
+    display: block;
+    position: relative;
+    bottom: 20px;
+    right: 3px;
+    font-size: 25px;
+    color: #bdb9b9;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #bdb9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+  .slick-arrow.slick-next {
+    font-size: 10px;
+  }
+  .ant-carousel .slick-next::before {
+    content: ">";
+    display: block;
+    position: relative;
+    right: 3px;
+    bottom: 20px;
+    font-size: 25px;
+    color: #bdb9b9;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #bdb9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+  .slick-dots li button {
+    background: rgb(181, 180, 180);
+  }
+  .slick-dots li.slick-active button {
+    background: $color-primary;
+  }
+  .mobile {
+    display: none;
+  }
+  .web {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: $breakpoint-md) {
-    .department-info {
-        padding: 150px 0 0 0;
-        .department-logo {
-            img {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-            h5 {
-                font-size: 36px;
-                font-weight: 600;
-                color: black;
-                letter-spacing: 1px;
-            }
-        }
-        .web {
-            display: none;
-        }
-        .mobile {
-            display: block;
-        }
-        .rowcarousel {
-            img {
-                width: 100%;
-            }
-        }
+  .department-info {
+    padding: 150px 0 0 0;
+    .department-logo {
+      img {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      h5 {
+        font-size: 36px;
+        font-weight: 600;
+        color: black;
+        letter-spacing: 1px;
+      }
     }
+    .web {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+    .rowcarousel {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
