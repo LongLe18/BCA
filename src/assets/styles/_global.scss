@@ -11,7 +11,15 @@ body {
 
 a {
   text-decoration: none !important;
-  color: $color-text-black !important;
+  // color: $color-text-black !important;
+}
+button {
+  span {
+    display: block !important;
+  }
+}
+.readmore {
+  color: $color-primary !important;
 }
 
 //--------------- PAGE-----------------------

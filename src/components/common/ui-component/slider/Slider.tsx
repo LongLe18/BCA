@@ -9,7 +9,6 @@ const SliderCustom = () => {
       <div className="container">
         <Carousel effect="fade">
           <div>
-            {" "}
             <Row gutter={{xs: 8, sm: 16, md: 24, lg: 32}} className="row-title">
               <Col className="gutter-row row-1" span={10}>
                 <h1>

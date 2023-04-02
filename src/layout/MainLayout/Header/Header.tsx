@@ -119,7 +119,7 @@ const itemsFlag: MenuProps["items"] = [
 
 const HeaderCustom = () => {
   const {token} = useToken();
-  const [current, setCurrent] = useState("home");
+  const [current, setCurrent] = useState("");
   const [openMenu, setOpenMenu] = useState(false);
 
   const contentStyle = {

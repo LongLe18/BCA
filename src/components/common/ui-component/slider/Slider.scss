@@ -1,4 +1,5 @@
 @import "assets/styles/variables";
+@import "assets/styles/color";
 .slider {
   padding-top: 190px;
   .row-title {
@@ -75,6 +76,48 @@
     text-align: center;
     margin-bottom: 70px;
   }
+  .ant-carousel .slick-prev::before {
+    content: "<";
+    display: block;
+    position: relative;
+    top: 250px;
+    bottom: 20px;
+    left: 50px;
+    font-size: 25px;
+    color: #bdb9b9;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #bdb9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+  .ant-carousel .slick-next::before {
+    content: ">";
+    display: block;
+    position: relative;
+    right: 50px;
+    bottom: 20px;
+    font-size: 25px;
+    color: #bdb9b9;
+    top: 250px;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #bdb9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+  .slick-dots li button {
+    background: rgb(181, 180, 180);
+  }
+  //   .slick-dots li.slick-active button {
+  //     background: $color-primary;
+  //   }
 
   @media only screen and (max-width: $breakpoint-md) {
     .row-title {

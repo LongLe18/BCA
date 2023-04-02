@@ -1,5 +1,5 @@
 @import "assets/styles/variables";
-
+@import "assets/styles/color";
 .logo {
   justify-content: center;
   align-items: center;
@@ -19,6 +19,9 @@
 a.nav-link,
 a.link-to {
   font-weight: bold;
+  &.active {
+    color: $color-primary !important;
+  }
 }
 .navbar {
   line-height: 0 !important;
