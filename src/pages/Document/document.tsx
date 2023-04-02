@@ -6,7 +6,7 @@ import {columns, DataType, data} from "./document.config";
 import "./document.scss";
 import {useNavigate} from "react-router-dom";
 import {Col, Row} from "antd";
-import {setCurrentPage} from "redux/actions";
+// import {setCurrentPage} from "redux/actions";
 
 const {Title, Text} = Typography;
 const Document = () => {

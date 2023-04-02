@@ -11,9 +11,14 @@
   }
 }
 #header {
+  position: fixed;
   h5 {
-    font-weight: 600;
+    font-weight: bold;
   }
+}
+a.nav-link,
+a.link-to {
+  font-weight: bold;
 }
 .navbar {
   line-height: 0 !important;
@@ -25,6 +30,13 @@
   display: none;
 }
 
+.link-to {
+  font-weight: 500;
+}
+
+.ant-dropdown-menu-item {
+  height: 50px;
+}
 :where(.css-dev-only-do-not-override-1e3x2xa).ant-menu-light.ant-menu-horizontal
   > .ant-menu-item-selected::after {
   border-bottom-width: 0;

@@ -41,36 +41,56 @@ const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Phòng A
+      <a rel="noopener noreferrer" href="/department">
+        Phòng tổng hợp
       </a>
     ),
   },
   {
     key: "2",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        Phòng B
+      <a rel="noopener noreferrer" href="https://www.aliyun.com">
+        Phòng y tế dự phòng
       </a>
     ),
   },
   {
     key: "3",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        Phòng C
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        Phòng nghiệp vụ Y
+      </a>
+    ),
+  },
+  {
+    key: "4",
+    label: (
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        Phòng nghiệp vụ Dược
+      </a>
+    ),
+  },
+  {
+    key: "5",
+    label: (
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        Phòng y tế cơ quan bộ
+      </a>
+    ),
+  },
+  {
+    key: "6",
+    label: (
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        Phòng quản lý môi trường
+      </a>
+    ),
+  },
+  {
+    key: "7",
+    label: (
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
+        PQL điều dưỡng & phục hồi chức năng
       </a>
     ),
   },
@@ -112,7 +132,7 @@ const HeaderCustom = () => {
     {
       key: "home",
       label: (
-        <a className="nav-link scrollto " href="/">
+        <a className="nav-link scrollto link-to" href="/">
           Trang chủ
         </a>
       ),
@@ -120,7 +140,7 @@ const HeaderCustom = () => {
     {
       key: "about",
       label: (
-        <a className="nav-link scrollto" href="#about">
+        <a className="nav-link scrollto link-to" href="/introduce">
           Giới thiệu
         </a>
       ),
@@ -138,7 +158,7 @@ const HeaderCustom = () => {
             </div>
           )}
         >
-          <a onClick={e => e.preventDefault()} href="/#">
+          <a onClick={e => e.preventDefault()} href="/#" className="link-to">
             <Space>
               Phòng ban
               <CaretDownOutlined />
@@ -150,7 +170,7 @@ const HeaderCustom = () => {
     {
       key: "portfolio",
       label: (
-        <a className="nav-link scrollto " href="/recruitment">
+        <a className="nav-link scrollto link-to " href="/recruitment">
           Tuyển dụng
         </a>
       ),
@@ -190,7 +210,7 @@ const HeaderCustom = () => {
     {
       key: "search",
       label: (
-        <a className="nav-link scrollto" href="/#">
+        <a className="nav-link scrollto link-to" href="/#">
           <SearchOutlined />
         </a>
       ),

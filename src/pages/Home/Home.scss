@@ -1,6 +1,8 @@
+@import "assets/styles/_color.scss";
+
 .Home {
     .slider {
-        background-color: #c51b12e0;
+        background-color: $color-primary;
     }
     .main {
         .categoryTitle {

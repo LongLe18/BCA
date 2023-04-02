@@ -19,6 +19,9 @@ const BiddingMain = Loadable(
 const BiddingDetail = Loadable(
   lazy(() => import("pages/Bidding/bidding-detail/bidding-detail"))
 );
+const Introduce = Loadable(lazy(() => import("pages/Introduce/Introduce")));
+const Department = Loadable(lazy(() => import("pages/Department/Department")));
+
 const RecruitmentMain = Loadable(
   lazy(() => import("pages/recruitment/recruitment-main/recruitment-main"))
 );
@@ -43,6 +46,14 @@ let MainRoutes = [
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/introduce",
+        element: <Introduce />,
+      },
+      {
+        path: "/department",
+        element: <Department />,
       },
       // ----------- Nested Routed----------
       {
