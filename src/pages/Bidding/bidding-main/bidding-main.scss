@@ -1,0 +1,24 @@
+@import "assets/styles/_color.scss";
+.bidding-main-page {
+  .slider {
+    background-color: $color-primary;
+  }
+  .newest {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $color-secondary;
+    img.logo {
+      max-height: 30px;
+    }
+  }
+  .read-more {
+    .title {
+      font-weight: bold;
+    }
+    padding-top: 50px;
+    padding-bottom: 50px;
+    img.logo {
+      max-height: 30px;
+    }
+  }
+}

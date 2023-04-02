@@ -11,7 +11,23 @@ body {
 
 a {
   text-decoration: none !important;
+  color: $color-text-black !important;
 }
+
+//--------------- PAGE-----------------------
+.page {
+  margin-top: 90px;
+  padding: 72px 0 72px 0;
+}
+.newest,
+.read-more {
+  .container {
+    @media only screen and (min-width: 992px) {
+      width: 960px !important;
+    }
+  }
+}
+
 // ---------------TEXT-----------------------
 div.custom-text-light {
   color: $color-text-light;
@@ -33,9 +49,16 @@ li.ant-menu-item {
   ul.ant-table-pagination {
     justify-content: center;
     li.ant-pagination-item {
+      border: none;
       border-radius: 50%;
-      color: $color-white;
+      color: $color-white !important;
       background-color: $color-primary;
+      a {
+        color: $color-white !important;
+      }
     }
   }
+}
+.ant-divider-horizontal {
+  margin: 0 !important;
 }

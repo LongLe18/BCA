@@ -1,0 +1,36 @@
+@import "assets/styles/_color.scss";
+.card-news {
+  .img {
+    &:hover {
+      cursor: pointer;
+    }
+    height: fit-content;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .catalog {
+    color: $color-primary;
+    font-weight: bold;
+  }
+  .date {
+    color: $color-text-light;
+  }
+  .title {
+    font-weight: bold;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .content {
+    text-align: justify;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

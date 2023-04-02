@@ -7,8 +7,8 @@ import {useNavigate} from "react-router-dom";
 import {Col, Row} from "antd";
 
 // redux
-import { useSelector, useDispatch } from "react-redux";
-import * as commonActions from '../../../redux/actions/common';
+import {useSelector, useDispatch} from "react-redux";
+import * as commonActions from "../../../redux/actions/common";
 
 const data: DataType[] = [
   {
@@ -36,18 +36,18 @@ const data: DataType[] = [
     deadline: "27 tháng 3, 2021",
   },
 ];
-const { Title, Text } = Typography;
+const {Title, Text} = Typography;
 const RecruitmentMain = () => {
   const data1 = useSelector<any>(state => state.common.page);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('test')
+    console.log("test");
     // dispatch(commonActions.setCurrentPage());
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className="recruitment-page container">
+    <div className="recruitment-page page container">
       <Row className="header">
         <Col>
           <Title className="title">

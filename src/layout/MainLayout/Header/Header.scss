@@ -13,8 +13,12 @@
 #header {
   position: fixed;
   h5 {
-    font-weight: 500;
+    font-weight: bold;
   }
+}
+a.nav-link,
+a.link-to {
+  font-weight: bold;
 }
 .navbar {
   line-height: 0 !important;

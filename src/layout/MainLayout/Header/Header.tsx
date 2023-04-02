@@ -41,10 +41,7 @@ const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <a 
-        rel="noopener noreferrer"
-        href="/department"
-      >
+      <a rel="noopener noreferrer" href="/department">
         Phòng tổng hợp
       </a>
     ),
@@ -52,10 +49,7 @@ const items: MenuProps["items"] = [
   {
     key: "2",
     label: (
-      <a 
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
+      <a rel="noopener noreferrer" href="https://www.aliyun.com">
         Phòng y tế dự phòng
       </a>
     ),
@@ -63,10 +57,7 @@ const items: MenuProps["items"] = [
   {
     key: "3",
     label: (
-      <a 
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
         Phòng nghiệp vụ Y
       </a>
     ),
@@ -74,10 +65,7 @@ const items: MenuProps["items"] = [
   {
     key: "4",
     label: (
-      <a
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
         Phòng nghiệp vụ Dược
       </a>
     ),
@@ -85,10 +73,7 @@ const items: MenuProps["items"] = [
   {
     key: "5",
     label: (
-      <a 
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
         Phòng y tế cơ quan bộ
       </a>
     ),
@@ -96,10 +81,7 @@ const items: MenuProps["items"] = [
   {
     key: "6",
     label: (
-      <a 
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
         Phòng quản lý môi trường
       </a>
     ),
@@ -107,10 +89,7 @@ const items: MenuProps["items"] = [
   {
     key: "7",
     label: (
-      <a
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <a rel="noopener noreferrer" href="https://www.luohanacademy.com">
         PQL điều dưỡng & phục hồi chức năng
       </a>
     ),
@@ -199,7 +178,7 @@ const HeaderCustom = () => {
     {
       key: "invite",
       label: (
-        <a className="nav-link scrollto link-to" href="#team">
+        <a className="nav-link scrollto" href="/bidding">
           Mời thầu
         </a>
       ),
@@ -207,7 +186,7 @@ const HeaderCustom = () => {
     {
       key: "document",
       label: (
-        <a className="nav-link scrollto link-to" href="#services">
+        <a className="nav-link scrollto" href="/document">
           Văn bản
         </a>
       ),
@@ -215,7 +194,7 @@ const HeaderCustom = () => {
     {
       key: "news",
       label: (
-        <a className="nav-link scrollto link-to" href="#services">
+        <a className="nav-link scrollto" href="/news">
           Tin tức
         </a>
       ),
@@ -223,7 +202,7 @@ const HeaderCustom = () => {
     {
       key: "contact",
       label: (
-        <a className="nav-link scrollto link-to" href="#contact">
+        <a className="nav-link scrollto" href="/contact">
           Liên hệ
         </a>
       ),
