@@ -13,6 +13,12 @@ const NewsMain = Loadable(lazy(() => import("pages/News/news-main/news-main")));
 const NewsDetail = Loadable(
   lazy(() => import("pages/News/news-detail/news-detail"))
 );
+const BiddingMain = Loadable(
+  lazy(() => import("pages/Bidding/bidding-main/bidding-main"))
+);
+const BiddingDetail = Loadable(
+  lazy(() => import("pages/Bidding/bidding-detail/bidding-detail"))
+);
 const RecruitmentMain = Loadable(
   lazy(() => import("pages/recruitment/recruitment-main/recruitment-main"))
 );
@@ -53,6 +59,14 @@ let MainRoutes = [
         children: [
           {path: "", element: <NewsMain />},
           {path: "/news/detail/:id", element: <NewsDetail />},
+        ],
+      },
+      {
+        path: "/bidding",
+        element: <Outlet />,
+        children: [
+          {path: "", element: <BiddingMain />},
+          {path: "/bidding/detail/:id", element: <BiddingDetail />},
         ],
       },
       // --------Multi-PrivateOutlet-----------

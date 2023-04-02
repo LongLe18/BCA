@@ -158,7 +158,7 @@ const HeaderCustom = () => {
     {
       key: "invite",
       label: (
-        <a className="nav-link scrollto" href="#team">
+        <a className="nav-link scrollto" href="/bidding">
           Mời thầu
         </a>
       ),
