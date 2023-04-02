@@ -28,7 +28,7 @@ const CardNews = props => {
       )}
       {type == 2 && (
         <div className="type-2">
-          <Row gutter={60}>
+          <Row gutter={30}>
             <Col span={14}>
               <Space direction="vertical">
                 <Space size="middle">
