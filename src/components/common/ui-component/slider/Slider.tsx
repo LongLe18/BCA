@@ -22,7 +22,7 @@ const SliderCustom = () => {
                   sỹ...
                 </span>
                 <div className="readmore">
-                  <a href="/#">
+                  <a href="/introduce">
                     <Space>
                       <span style={{color: "#ffdf00"}}>Đọc thêm</span>{" "}
                       <div className="arrow-icon">
@@ -61,7 +61,7 @@ const SliderCustom = () => {
                   sỹ...
                 </span>
                 <div className="readmore">
-                  <a href="/#">
+                  <a href="/introduce">
                     <Space>
                       <span style={{color: "#ffdf00"}}>Đọc thêm</span>{" "}
                       <div className="arrow-icon">
@@ -100,7 +100,7 @@ const SliderCustom = () => {
                   sỹ...
                 </span>
                 <div className="readmore">
-                  <a href="/#">
+                  <a href="/introduce">
                     <Space>
                       <span style={{color: "#ffdf00"}}>Đọc thêm</span>{" "}
                       <div className="arrow-icon">

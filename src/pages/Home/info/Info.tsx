@@ -49,7 +49,7 @@ const Info = () => {
                 size="large"
                 style={{padding: 0}}
               />
-              <a href="/#">Xem thêm </a>
+              <a href="/introduce">Xem thêm </a>
             </div>
           </Col>
         </Row>
