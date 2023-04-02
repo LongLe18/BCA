@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {Col, Row, Space, Typography, Divider} from "antd";
+import {Col, Row, Space, Typography, Divider, Breadcrumb} from "antd";
 import CardJob from "components/recruitment-detail/card-job/card-job";
 import {job} from "./data";
 import "./recruitment-detail.scss";
@@ -9,6 +9,20 @@ const RecruitmentDetail = () => {
   useEffect(() => {}, []);
   return (
     <div className="recruitment-detail-page page container">
+      <Breadcrumb
+        style={{fontSize: 16, marginBottom: 10}}
+        items={[
+          {
+            title: <a href="/">Trang chủ</a>,
+          },
+          {
+            title: <a href="/recruitment">Tuyển dụng</a>,
+          },
+          {
+            title: <a href="">Chi tiết tuyển dụng</a>,
+          },
+        ]}
+      />
       <Row>
         <Col xs={24} sm={24} md={16} lg={16} xl={16}>
           <Space direction="vertical" size="middle">

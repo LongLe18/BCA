@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import {Typography} from "antd";
-import {Table, Tag} from "antd";
+import {Table, Tag, Breadcrumb} from "antd";
 import {columns, DataType} from "./recruitment-main.config";
 import "./recruitment-main.scss";
 import {useNavigate} from "react-router-dom";
@@ -48,6 +48,17 @@ const RecruitmentMain = () => {
 
   return (
     <div className="recruitment-page page container">
+      <Breadcrumb
+        style={{fontSize: 16, marginBottom: 10}}
+        items={[
+          {
+            title: <a href="/">Trang chủ</a>,
+          },
+          {
+            title: <a href="/recruitment">Tuyển dụng</a>,
+          },
+        ]}
+      />
       <Row className="header">
         <Col>
           <Title className="title">
