@@ -158,7 +158,7 @@ const FooterCustom = () => {
             alt="Logo BCA"
             className="img-fluid"
           />
-          <h5>Cục Y tế - Bộ Công An</h5>
+          <h5 style={{fontWeight: "semi-bold"}}>Cục Y tế - Bộ Công An</h5>
         </Link>
 
         <div id="navbar" className="navbar">

@@ -1,2 +1,34 @@
+@import "assets/styles/_color.scss";
 .news-detail-page {
+  div {
+    text-align: justify;
+  }
+  .title {
+    text-align: start;
+  }
+  .ant-space-item {
+    width: 100%;
+  }
+  .date {
+    color: $color-text-light;
+  }
+  .catalog {
+    color: $color-primary;
+    font-weight: bold;
+  }
+  div.img {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 600px;
+      height: auto;
+    }
+  }
+  .description {
+    font-weight: bold;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 768px !important;
+  }
 }
