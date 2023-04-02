@@ -14,7 +14,7 @@ const News = () => {
             <h3>Tin tức</h3>
           </div>
           <div className="readmore">
-            <a href="/#">Đọc thêm </a>
+            <a href="/news">Đọc thêm </a>
             <Button
               type="text"
               shape="circle"
