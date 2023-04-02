@@ -18,6 +18,14 @@ a {
 .page {
   padding: 72px 0 72px 0;
 }
+.newest,
+.read-more {
+  .container {
+    @media only screen and (min-width: 992px) {
+      width: 960px !important;
+    }
+  }
+}
 
 // ---------------TEXT-----------------------
 div.custom-text-light {
