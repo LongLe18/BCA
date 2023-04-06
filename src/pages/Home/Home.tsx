@@ -11,11 +11,16 @@ import HomeRecruitment from "./recruitment/Recruitment";
 import Tenderer from "./tenderer/Tenderer";
 
 import "./Home.scss";
+import {useDispatch} from "react-redux";
+import {setCurrentPage} from "redux/actions/common";
+import {useTypedSelector} from "rtk/store";
+import {job} from "rtk/todoSlice";
 
 const {Content} = Layout;
 const Home = () => {
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // const globalPolling = useTypedSelector(job);
+    // console.log(globalPolling);
   }, []);
 
   return (
