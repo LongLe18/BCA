@@ -27,7 +27,7 @@ const News = () => {
           </div>
         </Row>
         <Row gutter={{xs: 8, sm: 16, md: 24, lg: 32}} className="row-title">
-          <Col span={12} className="col-news">
+          <Col xs={24} sm={12} md={12} lg={12} xl={12} className="col-news">
             <Card
               className="big-news"
               hoverable
@@ -56,7 +56,7 @@ const News = () => {
               </div>
             </Card>
           </Col>
-          <Col span={12} className="col-news">
+          <Col xs={24} sm={12} md={12} lg={12} xl={12} className="col-news">
             <Card
               className="big-news"
               hoverable
@@ -89,9 +89,16 @@ const News = () => {
         <Divider />
         <Row
           gutter={{xs: 8, sm: 16, md: 24, lg: 32}}
-          style={{marginBottom: 70, justifyContent: "space-between"}}
+          style={{marginBottom: 70}}
         >
-          <Col span={8} className="col-news-little">
+          <Col
+            xs={24}
+            sm={12}
+            md={12}
+            lg={8}
+            xl={8}
+            className="col-news-little"
+          >
             <Card
               className="big-news little-news"
               hoverable
@@ -120,7 +127,14 @@ const News = () => {
               </div>
             </Card>
           </Col>
-          <Col span={8} className="col-news-little">
+          <Col
+            xs={24}
+            sm={12}
+            md={12}
+            lg={8}
+            xl={8}
+            className="col-news-little"
+          >
             <Card
               className="big-news little-news"
               hoverable
@@ -149,7 +163,14 @@ const News = () => {
               </div>
             </Card>
           </Col>
-          <Col span={8} className="col-news-little">
+          <Col
+            xs={24}
+            sm={12}
+            md={12}
+            lg={8}
+            xl={8}
+            className="col-news-little"
+          >
             <Card
               className="big-news little-news"
               hoverable
