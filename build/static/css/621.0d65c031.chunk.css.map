@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/621.0d65c031.chunk.css","mappings":"AACE,qBACE","sources":["pages/Contact/contact.scss"],"sourcesContent":[".contact-page {\r\n  .title {\r\n    font-weight: bold;\r\n  }\r\n}\r\n"],"names":[],"sourceRoot":""}

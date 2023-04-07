@@ -1,7 +1,7 @@
 import "./Header.scss";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
-
+import {useDispatch, useSelector} from "react-redux";
 import {
   Layout,
   Dropdown,
@@ -18,6 +18,8 @@ import {
   MenuOutlined,
 } from "@ant-design/icons";
 import type {MenuProps} from "antd";
+import {RootState} from "redux/store";
+import {changeCurrentPage} from "redux/reducers/common";
 
 const {Header} = Layout;
 const {useToken} = theme;
@@ -121,7 +123,8 @@ const HeaderCustom = () => {
   const {token} = useToken();
   const [current, setCurrent] = useState("");
   const [openMenu, setOpenMenu] = useState(false);
-
+  const currentPage = useSelector((state: RootState) => state.common);
+  const dispatch = useDispatch();
   const contentStyle = {
     backgroundColor: token.colorBgElevated,
     borderRadius: token.borderRadiusLG,
@@ -132,15 +135,25 @@ const HeaderCustom = () => {
     {
       key: "home",
       label: (
-        <a className="nav-link scrollto link-to" href="/">
+        <a
+          className={`nav-link scrollto link-to ${
+            current == "home" ? "active" : ""
+          }`}
+          href="/"
+        >
           Trang chủ
         </a>
       ),
     },
     {
-      key: "about",
+      key: "introduce",
       label: (
-        <a className="nav-link scrollto link-to" href="/introduce">
+        <a
+          className={`nav-link scrollto link-to ${
+            current == "introduce" ? "active" : ""
+          }`}
+          href="/introduce"
+        >
           Giới thiệu
         </a>
       ),
@@ -238,7 +251,9 @@ const HeaderCustom = () => {
       ),
     },
   ];
-
+  useEffect(() => {
+    console.log(currentPage);
+  }, []);
   return (
     <Header style={headerStyle} id="header">
       <div className="container d-flex align-items-center justify-content-between">
@@ -261,7 +276,10 @@ const HeaderCustom = () => {
               borderBottom: "none",
               width: "100%",
             }}
-            onClick={e => setCurrent(e.key)}
+            onClick={e => {
+              console.log(e.key);
+              dispatch(changeCurrentPage(e.key));
+            }}
             overflowedIndicator={<MenuOutlined />}
           />
         </div>
@@ -294,7 +312,7 @@ const HeaderCustom = () => {
               borderBottom: "none",
               width: "100%",
             }}
-            onClick={e => setCurrent(e.key)}
+            onClick={e => {}}
             overflowedIndicator={<MenuOutlined />}
           />
         </Drawer>
