@@ -3,6 +3,7 @@ import {Row, Col, Button, Card, Divider} from "antd";
 import {ArrowRightOutlined} from "@ant-design/icons";
 
 import "./News.scss";
+import {Link} from "react-router-dom";
 
 const News = () => {
   return (
@@ -39,17 +40,18 @@ const News = () => {
             >
               <div className="ant-card-meta-detail">
                 <div className="ant-card-meta-date">
-                  26 tháng 8 | <span>Thị trường</span>
+                  26 tháng 8 | <span>Hoạt động</span>
                 </div>
                 <div className="ant-card-meta-title">
-                  Lorem ipsum is simply dummy text of the printing
+                  <Link to={"/news/detail/:id"}>
+                    Cục Y tế Bộ Công an đón nhận Huân chương Lao động hạng Ba
+                  </Link>
                 </div>
                 <div className="ant-card-meta-description">
-                  Lorem ipsum is simply dummy text of the printing. Lorem ipsum
-                  is simply dummy text of the printing. Lorem ipsum is simply
-                  dummy text of the printing. Lorem ipsum is simply dummy text
-                  of the printing. Lorem ipsum is simply dummy text of the
-                  printing
+                  Sáng 22/02/2022, tại Hà Nội, Bộ Công an tổ chức kỷ niệm 67 năm
+                  Ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2022); 45 năm
+                  Ngày thành lập Cục Y tế (21/01/1977-21/01/2022) và đón nhận
+                  Huân chương Lao động hạng Ba
                 </div>
               </div>
             </Card>
@@ -67,17 +69,18 @@ const News = () => {
             >
               <div className="ant-card-meta-detail">
                 <div className="ant-card-meta-date">
-                  26 tháng 8 | <span>Tập đoàn</span>
+                  26 tháng 8 | <span>Hoạt động</span>
                 </div>
                 <div className="ant-card-meta-title">
-                  Lorem ipsum is simply dummy text of the printing
+                  <Link to={"/news/detail/:id"}>
+                    Cục Y tế Bộ Công an đón nhận Huân chương Lao động hạng Ba
+                  </Link>
                 </div>
                 <div className="ant-card-meta-description">
-                  Lorem ipsum is simply dummy text of the printing. Lorem ipsum
-                  is simply dummy text of the printing. Lorem ipsum is simply
-                  dummy text of the printing. Lorem ipsum is simply dummy text
-                  of the printing. Lorem ipsum is simply dummy text of the
-                  printing
+                  Sáng 22/02/2022, tại Hà Nội, Bộ Công an tổ chức kỷ niệm 67 năm
+                  Ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2022); 45 năm
+                  Ngày thành lập Cục Y tế (21/01/1977-21/01/2022) và đón nhận
+                  Huân chương Lao động hạng Ba
                 </div>
               </div>
             </Card>
@@ -101,17 +104,18 @@ const News = () => {
             >
               <div className="ant-card-meta-detail">
                 <div className="ant-card-meta-date">
-                  26 tháng 8 | <span>Thị trường</span>
+                  26 tháng 8 | <span>Hoạt động</span>
                 </div>
                 <div className="ant-card-meta-title">
-                  Lorem ipsum is simply dummy text of the printing
+                  <Link to={"/news/detail/:id"}>
+                    Cục Y tế Bộ Công an đón nhận Huân chương Lao động hạng Ba
+                  </Link>
                 </div>
                 <div className="ant-card-meta-description">
-                  Lorem ipsum is simply dummy text of the printing. Lorem ipsum
-                  is simply dummy text of the printing. Lorem ipsum is simply
-                  dummy text of the printing. Lorem ipsum is simply dummy text
-                  of the printing. Lorem ipsum is simply dummy text of the
-                  printing
+                  Sáng 22/02/2022, tại Hà Nội, Bộ Công an tổ chức kỷ niệm 67 năm
+                  Ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2022); 45 năm
+                  Ngày thành lập Cục Y tế (21/01/1977-21/01/2022) và đón nhận
+                  Huân chương Lao động hạng Ba
                 </div>
               </div>
             </Card>
@@ -129,17 +133,18 @@ const News = () => {
             >
               <div className="ant-card-meta-detail">
                 <div className="ant-card-meta-date">
-                  26 tháng 8 | <span>Tập đoàn</span>
+                  26 tháng 8 | <span>Hoạt động</span>
                 </div>
                 <div className="ant-card-meta-title">
-                  Lorem ipsum is simply dummy text of the printing
+                  <Link to={"/news/detail/:id"}>
+                    Cục Y tế Bộ Công an đón nhận Huân chương Lao động hạng Ba
+                  </Link>
                 </div>
                 <div className="ant-card-meta-description">
-                  Lorem ipsum is simply dummy text of the printing. Lorem ipsum
-                  is simply dummy text of the printing. Lorem ipsum is simply
-                  dummy text of the printing. Lorem ipsum is simply dummy text
-                  of the printing. Lorem ipsum is simply dummy text of the
-                  printing
+                  Sáng 22/02/2022, tại Hà Nội, Bộ Công an tổ chức kỷ niệm 67 năm
+                  Ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2022); 45 năm
+                  Ngày thành lập Cục Y tế (21/01/1977-21/01/2022) và đón nhận
+                  Huân chương Lao động hạng Ba
                 </div>
               </div>
             </Card>
@@ -157,17 +162,18 @@ const News = () => {
             >
               <div className="ant-card-meta-detail">
                 <div className="ant-card-meta-date">
-                  26 tháng 8 | <span>Tập đoàn</span>
+                  26 tháng 8 | <span>Hoạt động</span>
                 </div>
                 <div className="ant-card-meta-title">
-                  Lorem ipsum is simply dummy text of the printing
+                  <Link to={"/news/detail/:id"}>
+                    Cục Y tế Bộ Công an đón nhận Huân chương Lao động hạng Ba
+                  </Link>
                 </div>
                 <div className="ant-card-meta-description">
-                  Lorem ipsum is simply dummy text of the printing. Lorem ipsum
-                  is simply dummy text of the printing. Lorem ipsum is simply
-                  dummy text of the printing. Lorem ipsum is simply dummy text
-                  of the printing. Lorem ipsum is simply dummy text of the
-                  printing
+                  Sáng 22/02/2022, tại Hà Nội, Bộ Công an tổ chức kỷ niệm 67 năm
+                  Ngày Thầy thuốc Việt Nam (27/02/1955 - 27/02/2022); 45 năm
+                  Ngày thành lập Cục Y tế (21/01/1977-21/01/2022) và đón nhận
+                  Huân chương Lao động hạng Ba
                 </div>
               </div>
             </Card>

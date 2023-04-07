@@ -9,10 +9,9 @@ export const data = [
   },
 ];
 export const dataTab = [
-  "Bảo hiểm nhân thọ",
-  "Bảo hiểm tích lũy",
-  "Bảo hiểm doanh nghiệp",
-  "Bảo hiểm con người",
-  "Bảo hiểm ô tô, xe máy",
-  "Bảo hiểm tài sản kỹ thuật",
+  "Hoạt động chính",
+  "Công tác đoàn",
+  "Công tác Đảng",
+  "Truyền thống",
+  "Thông tin chuyên môn",
 ];

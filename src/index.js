@@ -7,7 +7,7 @@ import '../src/index.scss'
 import { createRoot } from "react-dom/client";
 import App from "./App";
 
-import store from 'redux/store';
+import store from 'rtk/store.ts';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
