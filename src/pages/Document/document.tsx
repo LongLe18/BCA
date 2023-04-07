@@ -4,18 +4,12 @@ import {Typography, Breadcrumb} from "antd";
 import {Table, Tag} from "antd";
 import {columns, DataType, data} from "./document.config";
 import "./document.scss";
-import {useNavigate} from "react-router-dom";
 import {Col, Row} from "antd";
 // import {setCurrentPage} from "redux/actions";
 
 const {Title, Text} = Typography;
 const Document = () => {
-  const data1 = useSelector<any>(state => state.common.page);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    console.log(data1);
-    // dispatch(setCurrentPage("test"));
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className="document-page page container">

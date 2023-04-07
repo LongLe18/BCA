@@ -1,9 +1,9 @@
-import {combineReducers} from "redux";
-import common from "./common";
+import {combineReducers} from "@reduxjs/toolkit";
+import commonReducer from "./common";
+// import positionReducer from 'redux/'
 
-// Combines all reducers to a single reducer function.
-// We import combineReducers from Redux. CombineReducers is a helper function that combines our videos reducers into a
-// single reducer function that we can now pass to the creatorStore function.
-export default combineReducers({ 
-  common,
-})
+const rootReducer = combineReducers({
+  common: commonReducer,
+});
+
+export default rootReducer;

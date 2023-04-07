@@ -1,22 +1,17 @@
-import * as types from "../actions/types";
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-const initialState = {
-  page: {
-    loading: false,
-    result: {},
-    error: null,
+const initialState = {currentPage: ""};
+
+export const commonSlice = createSlice({
+  name: "common",
+  initialState: initialState,
+  reducers: {
+    changeCurrentPage: (state = initialState, action: PayloadAction<any>) => {
+      return {...state, currentPage: action.payload};
+    },
   },
-};
+});
 
-export default function common(state = initialState, action) {
-  switch (action.type) {
-    case types.SET_CURRENT_PAGE:
-      return {
-        ...state,
-        page: { ...state.page, loading: false, result: action.result },
-    };
+export const {changeCurrentPage} = commonSlice.actions;
 
-    default:
-      return state;
-  }
-};
+export default commonSlice.reducer;

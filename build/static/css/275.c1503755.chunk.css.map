@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/275.c1503755.chunk.css","mappings":"AACA,eACE,eAEA,iBAEE,cADA,eACA","sources":["pages/Document/document.scss"],"sourcesContent":["@import \"assets/styles/_color.scss\";\r\n.document-page {\r\n  padding: 72px 0 72px 0;\r\n\r\n  a {\r\n    font-weight: bold;\r\n    color: $color-text-black;\r\n  }\r\n}\r\n"],"names":[],"sourceRoot":""}
