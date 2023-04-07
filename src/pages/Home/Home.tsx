@@ -12,9 +12,6 @@ import Tenderer from "./tenderer/Tenderer";
 
 import "./Home.scss";
 import {useDispatch} from "react-redux";
-import {setCurrentPage} from "redux/actions/common";
-import {useTypedSelector} from "rtk/store";
-import {job} from "rtk/todoSlice";
 
 const {Content} = Layout;
 const Home = () => {
